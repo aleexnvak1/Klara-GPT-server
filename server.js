@@ -39,3 +39,4 @@ app.post("/klara", async (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Proxy läuft auf Port ${PORT}`));
 
+
