@@ -1,6 +1,12 @@
 import express from "express";
 import fetch from "node-fetch";
 
+app.use((req, res, next) => {
+  console.log("📩 Incoming request:", req.method, req.url, new Date().toISOString());
+  next();
+});
+
+
 const app = express();
 app.use(express.json());
 
